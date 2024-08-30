@@ -26,8 +26,22 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+#toggle-dark-mode-button{
+  background-color: #1e3851;
+}
+
+.main-square-sections{
+  height: 300px;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@media (min-width: 768px){
+  .main-square-sections{
+    height: 500px;
   }
 }

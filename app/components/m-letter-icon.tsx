@@ -4,8 +4,8 @@ const MLetterIcon = () => {
     return(
         <Image
           src="/m-letter-icon.png"
-          width={30}
-          height={30}
+          width={50}
+          height={50}
           alt="M"
           className='m-2 rounded-lg'/>
     )
