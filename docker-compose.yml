@@ -2,15 +2,10 @@ version: '3.8'
 
 services:
   my-portfolio:
-    image: node:20
-    working_dir: /home/aranorn/dev/my-portfolio
-    volumes:
-      - ./:/home/aranorn/dev/my-portfolio
+    build:
+      dockerfile: Dockerfile
+    container_name: my-portfolio
     ports:
-      - "5000:3030"
+      - "5050:3030"
     environment:
       - PORT=3030
-    command: >
-      sh -c "npm install -g pnpm &&
-             pnpm install --frozen-lockfile &&
-             pnpm dev"
