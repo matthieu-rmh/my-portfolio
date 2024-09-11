@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { dmSans } from "./ui/fonts";
 import LayoutHeader from "./components/layout-header";
+import { cookies } from 'next/headers';
 
 export const metadata: Metadata = {
   title: "Matthieu",
